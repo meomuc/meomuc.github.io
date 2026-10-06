@@ -1,16 +1,33 @@
 {
   "meta": {
-    "latest": "1.2.0",
+    "latest": "1.3.0",
     "downloadUrl": "https://github.com/meomuc/mewbook/releases/latest",
     "fanpageUrl": "https://www.facebook.com/meomuc.mewbook/",
     "assetUrlTemplate": "https://github.com/meomuc/mewbook/releases/download/v{version}/MewBook-Setup-{version}.exe"
   },
   "versions": [
     {
-      "ver": "v1.2.0",
-      "date": "2026-09-28",
+      "ver": "v1.3.0",
+      "date": "2026-10-06",
       "tag": "Mới",
       "tagColor": "bg-[#FF8C42] text-white",
+      "auto": false,
+      "bullets": [
+        "Phân loại thông minh lên 79% sách có hashtag thể loại (từ 26%), không cần huấn luyện lại",
+        "Đổi định dạng hàng loạt + lưu trang web thành PDF, không cần cài Calibre",
+        "Thứ tự ưu tiên nguồn thông tin sách rõ ràng; thêm giao diện tiếng Anh tùy chọn"
+      ],
+      "link": "https://github.com/meomuc/mewbook/releases/tag/v1.3.0",
+      "download": {
+        "win": "https://github.com/meomuc/mewbook/releases/download/v1.3.0/MewBook-Setup-1.3.0.exe",
+        "size": "100 MB"
+      }
+    },
+    {
+      "ver": "v1.2.0",
+      "date": "2026-09-28",
+      "tag": "Ổn định",
+      "tagColor": "bg-[#5A3E36] text-[#F5E6CC]",
       "auto": false,
       "bullets": [
         "“Đặt lại thư viện” mới trong Cài đặt › Sao lưu",
@@ -19,7 +36,7 @@
       ],
       "link": "",
       "download": {
-        "win": "https://github.com/meomuc/mewbook/releases/download/v1.2.0/MewBook-Setup-1.2.0.exe",
+        "win": "https://github.com/meomuc/mewbook/releases/latest",
         "size": "98 MB"
       }
     },
@@ -60,46 +77,28 @@
   ],
   "roadmap": [
     {
-      "title": "Sửa mã hóa cũ trong tên sách",
-      "desc": "Nhận diện và sửa tên sách gõ theo bảng mã cũ (TCVN3/VNI) thành Unicode chuẩn",
+      "title": "Đồng bộ với máy đọc sách: nhớ sách đã chép",
+      "desc": "Mèo nhớ cuốn nào đã chép sang máy đọc sách nào; hiện biểu tượng máy đọc sách trên bìa, cạnh đánh giá cộng đồng",
       "eta": "Kế hoạch",
       "status": "planned"
     },
     {
-      "title": "Giao diện tiếng Anh",
-      "desc": "Chuyển ngôn ngữ ngay trong Cài đặt",
+      "title": "Lọc sách đã / chưa chép sang máy đọc sách",
+      "desc": "Thêm vào bộ lọc \"Tình trạng\" để thấy ngay sách nào còn chưa mang theo",
       "eta": "Kế hoạch",
       "status": "planned"
     },
     {
-      "title": "Đồng bộ metadata cộng đồng: thứ tự ưu tiên nguồn",
-      "desc": "Máy cục bộ trước, rồi đến Cộng đồng MewBook, rồi mới đến nguồn khác trên Internet; xung đột giữa các nguồn luôn cho bạn xem trước và tự chọn nhận hay bỏ",
+      "title": "Xem sách đang có trên máy đọc sách",
+      "desc": "Cắm máy, Mèo đọc danh sách file (chỉ đọc, không kéo nội dung về) và đối chiếu với thư viện; sách đã có trên máy tính được đánh dấu biểu tượng máy tính",
       "eta": "Kế hoạch",
-      "status": "next"
+      "status": "planned"
     },
     {
-      "title": "Đồng bộ metadata cộng đồng: minh bạch & trạng thái",
-      "desc": "Trước khi bật, nói rõ chỉ chia sẻ metadata (không phải file sách) và có thể tắt bất cứ lúc nào; thanh trạng thái có icon riêng báo đang/đã đồng bộ",
+      "title": "Gửi sách tới Kindle",
+      "desc": "Kiểm chứng trên máy Kindle thật (EPUB, thư mục documents), sau đó cân nhắc gửi không dây qua email Kindle và máy ở chế độ MTP",
       "eta": "Kế hoạch",
-      "status": "next"
-    },
-    {
-      "title": "Lưu trang web thành PDF",
-      "desc": "Dán link, Mèo lọc bỏ menu/quảng cáo rồi lưu bài viết thành PDF vào thư viện, có nhắc nhở tôn trọng bản quyền trang gốc",
-      "eta": "Kế hoạch",
-      "status": "next"
-    },
-    {
-      "title": "Chuyển đổi định dạng tài liệu: hàng loạt",
-      "desc": "Chọn nhiều sách cùng lúc, đổi định dạng có thanh tiến độ; một file lỗi không làm dừng cả lô",
-      "eta": "Kế hoạch",
-      "status": "next"
-    },
-    {
-      "title": "Chuyển đổi định dạng tài liệu: minh bạch chất lượng",
-      "desc": "Cặp định dạng dễ lệch bố cục (như PDF sang định dạng chỉnh sửa được) sẽ được cảnh báo rõ trước khi đổi",
-      "eta": "Kế hoạch",
-      "status": "next"
+      "status": "planned"
     }
   ],
   "bugs": [
@@ -109,6 +108,20 @@
       "status": "Đang tìm hiểu",
       "priority": "Vừa",
       "color": "bg-zinc-400"
+    },
+    {
+      "id": "#2EE0",
+      "desc": "Phân loại thông minh không còn bỏ sót phần lớn sách vì nhầm là \"nội dung trộn nhiều chủ đề\"",
+      "status": "Đã sửa",
+      "priority": "Vừa",
+      "color": "bg-emerald-500"
+    },
+    {
+      "id": "#E7F2",
+      "desc": "Tìm/cập nhật thông tin sách đôi khi vẫn hỏi Internet dù chưa bật \"Nguồn Internet\"",
+      "status": "Đã sửa",
+      "priority": "Vừa",
+      "color": "bg-emerald-500"
     },
     {
       "id": "#95AD",
@@ -148,20 +161,6 @@
     {
       "id": "#11F5",
       "desc": "Scans: OCR clean-up",
-      "status": "Đã sửa",
-      "priority": "Vừa",
-      "color": "bg-emerald-500"
-    },
-    {
-      "id": "#2902",
-      "desc": "Front zone (training option)",
-      "status": "Đã sửa",
-      "priority": "Vừa",
-      "color": "bg-emerald-500"
-    },
-    {
-      "id": "#4BEF",
-      "desc": "Smart classification of short books and of EPUB / MOBI / AZW3",
       "status": "Đã sửa",
       "priority": "Vừa",
       "color": "bg-emerald-500"
@@ -243,10 +242,27 @@
       "theme": "retro_tech",
       "themeHash": "308cac3303",
       "imgHash": "425d73e9d3"
+    },
+    {
+      "src": "/assets/gallery/layout-ke-sach.webp?v=1c15f89290",
+      "title": "Kệ sách (bố cục gốc)",
+      "caption": "Kệ gỗ, panel chi tiết bên phải — bố cục mặc định từ 1.0",
+      "imgHash": "1c15f89290"
+    },
+    {
+      "src": "/assets/gallery/layout-toi-gian.webp?v=e35999e6c6",
+      "title": "Tối giản",
+      "caption": "Thanh trên cùng, không kệ gỗ — gọn hơn cho màn hình nhỏ",
+      "imgHash": "e35999e6c6"
     }
   ],
   "pendingShots": [],
   "announcements": [
+    {
+      "date": "2026-10-06",
+      "title": "MewBook 1.3.0: phân loại thông minh lên 79%, đổi định dạng không cần Calibre",
+      "text": "Phân loại thông minh bắt được gần 4 trên 5 cuốn sách (từ 26% lên 79%) nhờ sửa lỗi nhận nhầm sách nhiều chủ đề — không hạ ngưỡng, không huấn luyện lại; cuốn còn nghi vấn gom về nhóm "Gợi ý, cần xác nhận" để bạn duyệt một lần là xong. Đổi định dạng hàng loạt (EPUB, PDF, MOBI, AZW3, TXT) và lưu bài viết từ trang web thành PDF chạy ngay trong Mèo, không cần cài Calibre. Cập nhật thông tin sách theo thứ tự ưu tiên rõ ràng — trong file → thư viện của bạn → cộng đồng MewBook → Internet — Mèo không bao giờ ghi đè thứ bạn đã tự sửa. Thanh trạng thái có icon riêng khi đang đồng bộ metadata cộng đồng; biểu tượng tình trạng file và đánh giá cộng đồng cũng hiện trực tiếp trên bìa sách. Chuyển giao diện sang tiếng Anh trong Cài đặt (áp dụng sau khởi động lại). Thư viện lớn mượt hơn nhờ thêm chỉ mục cơ sở dữ liệu và gộp truy vấn phân loại."
+    },
     {
       "date": "2026-09-28",
       "title": "MewBook 1.2.0: Đặt lại thư viện, tìm thông tin sách gọn hơn",
